@@ -13,10 +13,12 @@ classifiers = [
     "Environment :: Web Environment",
     "Intended Audience :: Developers",
     "Intended Audience :: System Administrators",
-    "License :: OSI Approved :: MIT License",
+    "License :: OSI Approved :: Apache Software License",
     "Operating System :: OS Independent",
-    "Programming Language :: Python :: 2",
     "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
     "Topic :: Software Development :: Libraries :: Python Modules",
     "Topic :: Software Development :: Version Control :: Git"
 ]
@@ -25,7 +27,7 @@ include = [
 ]
 
 [tool.poetry.dependencies]
-python = "^3.4"
+python = "^3.6.7"
 github-webhook = "^1.0.2"
 
 [tool.poetry.dev-dependencies]
@@ -36,7 +38,7 @@ pytest-cov = "^2.10.0"
 
 [tool.black]
 line-length = 120
-target-version = ["py37", "py38"]
+target-version = ["py36", "py37", "py38"]
 include = "\\.pyi?$"
 exclude = """
 /(
