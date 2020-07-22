@@ -26,7 +26,6 @@ include = [
 
 [tool.poetry.dependencies]
 python = "^3.7"
-flask = "^0.12.2"
 github-webhook = "^1.0.2"
 
 [tool.poetry.dev-dependencies]

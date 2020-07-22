@@ -62,6 +62,6 @@ Contributions are welcomed! If you would like to improve or modify Flask-Github-
 This package is released under an open source MIT License. Flask-Github-Webhook was originally written by [Shawn Wallis](https://github.com/shawalli).
 
 ## References
-* [python-github-webhook](https://github.com/bloomberg/python-github-webhook) 
+* [python-github-webhook](https://github.com/bloomberg/python-github-webhook)
 * [GitHub Webhook Development Guide](https://developer.github.com/webhooks)
 * [Flask Extension Pattern](http://flask.pocoo.org/docs/latest/patterns/appfactories/#factories-extensions)
