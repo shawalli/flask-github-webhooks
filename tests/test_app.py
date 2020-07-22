@@ -1,6 +1,3 @@
-import sys
-
-print(sys.path)
 from flask_github_webhook import GithubWebhook
 
 
@@ -22,7 +19,7 @@ class TestApp(object):
 
         assert len([a for a in app.url_map.iter_rules(endpoint="/postreceive")]) == 1
         assert app.extensions["github_webhook"] == webhook
-        assert webhook._webhook._secret == None
+        assert webhook._webhook._secret is None
 
     def test_custom_config(self, app):
         endpoint = "/test_endpoint"

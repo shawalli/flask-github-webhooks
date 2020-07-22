@@ -1,5 +1,3 @@
-from flask.testing import FlaskClient
-
 from flask_github_webhook import GithubWebhook
 
 
@@ -45,7 +43,7 @@ class TestHook(object):
         response = cli.post(endpoint, json=hook_test_data["request"])
 
         assert response.status_code == 204
-        assert hook_test_data["hook_called"] == True
+        assert hook_test_data["hook_called"]
 
     def test_call_custom_hook(self, app):
         webhook = GithubWebhook()
@@ -69,4 +67,4 @@ class TestHook(object):
         response = cli.post(endpoint, github_event=event, json=hook_test_data["request"])
 
         assert response.status_code == 204
-        assert hook_test_data["hook_called"] == True
+        assert hook_test_data["hook_called"]
